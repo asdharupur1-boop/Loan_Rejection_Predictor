@@ -1,0 +1,16 @@
+ Core Web Framework
+streamlit
+
+# Data Processing
+pandas
+numpy
+openpyxl
+
+# Machine Learning
+scikit-learn
+joblib
+
+# Visualization
+matplotlib
+seaborn
+plotly
