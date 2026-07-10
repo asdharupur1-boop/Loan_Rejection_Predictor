@@ -1,0 +1,59 @@
+
+================================================================================
+LOAN REJECTION PREDICTION - MODEL TRAINING REPORT
+IIT Jammu - Internship Program | Week 5 Assignment
+================================================================================
+
+1. DATASET OVERVIEW
+   - Total samples: 28,885
+   - Features used: 50
+   - Rejection rate: 19.72%
+
+2. DATA SPLIT
+   - Training set: 21,663 samples
+   - Test set: 7,222 samples
+
+3. MODEL PERFORMANCE (Best: Random Forest)
+   - Accuracy: 0.9734
+   - Precision: 0.9406
+   - Recall: 0.9235
+   - F1-Score: 0.9320
+   - ROC-AUC: 0.9973
+   - CV ROC-AUC: 0.9957 (+/- 0.0007)
+
+4. ALL MODEL PERFORMANCE
+              Model  Accuracy  Precision   Recall  F1-Score  ROC-AUC  CV ROC-AUC
+Logistic Regression  0.951537   0.852825 0.911517  0.881195 0.975462    0.976505
+      Random Forest  0.973415   0.940629 0.923455  0.931963 0.997299    0.995686
+  Gradient Boosting  0.976322   0.994475 0.884831  0.936455 0.995617    0.994200
+
+5. TOP 15 IMPORTANT FEATURES
+         Feature  Importance
+        TURNFEAR    0.477227
+        NETWORTH    0.070805
+            LATE    0.064664
+          EQUITY    0.055019
+           ASSET    0.036328
+       INTDIVINC    0.033745
+NO_EMERGENCY_SAV    0.031443
+          INCOME    0.025029
+          SAVING    0.020366
+          CRDAPP    0.020146
+        LEVRATIO    0.019628
+        CHECKING    0.018623
+             AGE    0.011841
+        DEBT2INC    0.011015
+         WAGEINC    0.010895
+
+6. RISK INSIGHTS
+   - High DTI (>0.4) rejection rate: 21.54%
+   - High leverage (>0.5) rejection rate: 39.56%
+   - Low savings rejection rate: 32.46%
+   - No emergency savings rejection rate: 31.55%
+
+7. OUTPUT FILES
+   - Model: model1/loan_rejection_model.pkl
+   - Feature importance: model1/feature_importance.csv
+   - Visualizations: model1/visualizations/graphs/
+
+================================================================================
